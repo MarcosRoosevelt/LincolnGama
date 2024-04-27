@@ -12,7 +12,7 @@ ul {
 :root {
   --header-height: 4.5rem;
 
-  --hue: 159;
+  --hue: 199;
   --base-color: hsl(var(--hue) 36% 57%);
   --base-color-second: hsl(var(--hue) 65% 88%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
@@ -164,6 +164,11 @@ body {
   color: var(--body-color);
 }
 
+#header .container #logo {
+  width: 28vw;
+  height: 17vh;
+}
+
 /*  NAVIGATION */
 
 nav {
@@ -172,6 +177,11 @@ nav {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+}
+
+nav .menu ul li img {
+  width: 30vw;
+  height: 20vh;
 }
 
 nav ul li {
@@ -589,12 +599,17 @@ footer .social a:hover {
   nav .menu {
     visibility: visible;
     opacity: 1;
-    top: 0;
   }
 
   nav .menu ul {
     display: flex;
     gap: 2rem;
+
+    margin-top: 130px;
+  }
+
+  nav .menu ul li img {
+    visibility: hidden;
   }
 
   nav .menu ul li a.title {
@@ -611,6 +626,11 @@ footer .social a:hover {
 
   nav .icon-menu {
     display: none;
+  }
+
+  #header .container #logo {
+    width: 10vw;
+    height: 15vh;
   }
 
   #home .container {
